@@ -45,7 +45,10 @@ exit
 
 
  Исходные данные в /home/cryptouser
-   <img width="635" height="236" alt="image" src="https://github.com/user-attachments/assets/56e099ed-8875-4e48-bb33-fe56ad886b8b" />
+ sudo ls -la /home/cryptouser/
+ 
+  <img width="630" height="221" alt="image" src="https://github.com/user-attachments/assets/359a4dad-3638-4ef8-a00f-1c46b5e98dd2" />
+
 
 3. Зашифруем домашний каталог
 
