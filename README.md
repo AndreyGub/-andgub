@@ -55,10 +55,18 @@ exit
 sudo ecryptfs-migrate-home -u cryptouser
 После завершения миграции домашний каталог становится точкой монтирования, а реальные данные хранятся в зашифрованном виде в /home/.ecryptfs/cryptouser/.Private/.
 
-Проверим состояние каталога после шифрования (до первого входа пользователя):
+ Создайте файлы ВНУТРИ Private (зашифрованной области)
+cd ~/Private
+echo "Это секретный файл пользователя cryptouser" > secret.txt
+echo "Конфиденциальные данные для отчета" > report.txt
+echo "Логин: admin, Пароль: SuperSecret123" > credentials.txt
+Проверим состояние каталога после шифрования :
 
-bash
+
 ls -la /home/cryptouser
+<img width="756" height="389" alt="image" src="https://github.com/user-attachments/assets/d56a4260-17e2-49fe-80db-aed6ebcc65f1" />
+показывает зашифрованные файлы с именами
+<img width="1128" height="142" alt="image" src="https://github.com/user-attachments/assets/2de9e6ba-692b-451e-b162-26f945044e5b" />
 
 ### Задание 2
 
